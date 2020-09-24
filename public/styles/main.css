@@ -1,7 +1,7 @@
-
-/* CSS - Cascading style Sheets */
+/* CSS - Cascading Style Sheets*/
 :root {
-    --color-background: #F0F0F7;
+    /* variáveis css*/
+    --color-background: #F0F0F7; 
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
     --color-primary: #8257E5;
@@ -25,39 +25,43 @@
     font-size: 60%; /* controle das medidas rem */
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,
-body{
-    height: 100vh;
+
+html, 
+body {
+    height: 100vh; /* height = altura */
 }
 
-body{
-    height: 100vh;
+body {
     background: var(--color-background);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 body,
 input,
 button,
-textarea{
-    font: 500 1.6rem Poppins;
+textarea {
+    /* font: 500 1.6rem Poppins; */
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 1.6rem;
     color: var(--color-text-base);
 }
 
-#container{
-    width: 90vw;
+#container {
+    width: 90vw; /* width = largura */
     max-width: 700px;
 }
 
-@media(min-width: 700px){
-    :root{
-        font-size:62.5% /* todo 1rem vai ser relatio a 10px*/
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /* todo 1rem vai ser relativo a 10px */
     }
 }
